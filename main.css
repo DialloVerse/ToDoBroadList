@@ -4,8 +4,11 @@
     --darkest: #111827;
     --gray: #6B7280;
     --light: #EEE;
-    --pink: #EC4899;
-    --purple: #715f97;
+    --pink: #ec4861cd;
+    --purple: #7c7785;
+    --yellow: #f5f24c;
+    --blue: #0320fa;
+    --green: #14681a;
 }
 
 * {
@@ -17,5 +20,50 @@
 body {
     display: flex;
     flex-direction: column;
-    background: var(--purple);
+    min-height: 100vh;
+    background: var(--green);
+    color: #FFF;
+}
+
+header {
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: var(--blue);
+    margin-bottom: 1rem;
+}
+
+#new-task-form {
+    display: flex;
+}
+
+input, button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#new-task-input {
+    flex: 1 1 0%;
+    background-color: var(--darker);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    color: var(--light);
+    font-size: 1.25rem;
+}
+
+#new-task-input ::placeholder {
+    color: var(--gray);
+}
+
+#new-task-submit {
+    color: var(--pink);
 }
