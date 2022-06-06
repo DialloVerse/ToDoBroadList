@@ -1,7 +1,7 @@
 :root {
     --dark: #374151;
     --darker: #1F2937;
-    --darkest: #111827;
+    --darkest: #292d35;
     --gray: #6B7280;
     --light: #EEE;
     --pink: #ec4861cd;
@@ -65,5 +65,61 @@ input, button {
 }
 
 #new-task-submit {
+    color: var(--pink);
+    font-size: var(--pink);
+    font-weight: 1.25rem;
+    font-weight: 700;
+    background-image: linear-gradient(to right, var(--pink),
+    var(--purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#new-task-submit:hover {
+    opacity: 0.8;
+}
+
+#new-task-submit:active {
+    opacity: 0.6;
+}
+
+main {
+    flex: 1 1 0%;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.task-list {
+    padding: 1rem;
+}
+
+.task-list h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--yellow);
+    margin-bottom: 1rem;
+}
+
+#tasks .task {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--darkest);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+#tasks .task .content .text {
+    color: var(--light);
+    font-size: 1.2rem;
+    width: 100%;
+    display: block;
+    transition: 00.4s;
+}
+
+#tasks .task .content .text:not(:read-only) {
     color: var(--pink);
 }
